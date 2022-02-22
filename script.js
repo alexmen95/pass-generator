@@ -2,7 +2,7 @@ function genPassword() {
     // Define the basic variables 
     var elements = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var len = document.getElementById("input").value.trim(); // We use ternary operator to define the var len
-    var len = (len === "" || typeof len === 'string') ? 9 : parseInt(document.getElementById('input').value) - 1; 
+    var len = (len === '' || typeof len === 'string') ? 9 : parseInt(document.getElementById('input').value) - 1; 
     var password = "";
 
     // We use this loop to generate the combination of symbols
@@ -17,7 +17,7 @@ function genPasswordNumb() {
     // Define the basic variables
     var elements = "0123456789";
     var len = document.getElementById("input").value.trim();
-    var len = (len === "" || typeof len == 'string') ? 9 : parseInt(document.getElementById('input').value) - 1;
+    var len = (len === '' || typeof len === 'string') ? 9 : parseInt(document.getElementById('input').value) - 1;
     var passnumb = "";
     
     // Analogical like previous function
